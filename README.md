@@ -32,7 +32,7 @@ Begin by installing the library via your preferred package manager, then follow 
 ## How To Usage?
 ```json
 "depencies": {
-  "@whiskeysockets/baileys": "github:kayzennotdev/bail"
+  "@whiskeysockets/baileys": "github:SonKairn/kairn-baileys"
 }
 ```
 ## Import
@@ -107,7 +107,7 @@ await client.sendMessage(m.chat, {
       }
     ],
     newsletter: {
-      newsletterName: "Kayzennotdev",
+      newsletterName: "SonKairn",
       newsletterJid: "1@newsletter"
     }
   }
@@ -123,13 +123,13 @@ await client.relayMessage(m.chat, {
     thumbnail: { url: "./YourImage" },
     productId: "EXAMPLE_TOKEN",
     retailerId: "EXAMPLE_RETAILER_ID",
-    url: "https://t.me/kayzennotdev",
-    body: "Nak Tido",
+    url: "https://t.me/SonKairn",
+    body: "Pippe",
     footer: "Footer",
     buttons: [
       {
         name: "cta_url",
-        buttonParamsJson: "{\"display_text\":\"kayzen\",\"url\":\"https://t.me/kayzennotdev\"}"
+        buttonParamsJson: "{\"display_text\":\"SonKairn\",\"url\":\"https://t.me/SonKairn\"}"
       }
     ],
     priceAmount1000: 72502,
@@ -141,9 +141,7 @@ await client.relayMessage(m.chat, {
 ```javascript
 const thanksFor = async () => {
   const credit = new Map([
-    ["kayzen", ""],
-    ["Gupong", "source my fork"],
-    ["yuukey", "main source baileys ( maybe )"]
+    ["SonKairn", "makasih sudh menggunakan bail ku"]
   ]);
 
   return Object.fromEntries(credit);
